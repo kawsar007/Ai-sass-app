@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
@@ -7,12 +8,12 @@ const LandingPage = () => {
     <div>
       Landing Page (not protected)
       <div>
-        <Link href="/sign-in">
-         Login
-        </Link>
-        <Link href="/sign-up">
-          Register
-        </Link>
+        <Button>
+          <Link href="/sign-in">Login</Link>
+        </Button>
+        <Button>
+          <Link href="/sign-up">Register</Link>
+        </Button>
       </div>
     </div>
   );
